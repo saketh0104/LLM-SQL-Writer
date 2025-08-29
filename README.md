@@ -131,8 +131,3 @@ MIT License © 2025 Saketh Nandula
 Enjoy your voice-driven SQL application! 🚀
 
 ```
-
-This is **all-in-one copyable Markdown** — ready to drop into your repo as `README.md`.  
-
-If you want, I can also give you a **ready-to-copy `requirements.txt`** for this cleaned project next. Do you want me to do that?
-```
