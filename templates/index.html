@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>autoSQL - Recorder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="/static/styles.css" rel="stylesheet">
+  </head>
+  <body class="bg-light" data-theme="light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">autoSQL</a>
+        <div class="d-flex">
+          <div class="dropdown me-2">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Theme
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="themeDropdown">
+              <li><a class="dropdown-item theme-option" href="#" data-theme="light">Light</a></li>
+              <li><a class="dropdown-item theme-option" href="#" data-theme="dark">Dark</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Record Audio</h5>
+              <p class="card-text">Use your microphone to record audio. After uploading, the prompt will lock if audio has transcribable content.</p>
+
+              <div class="mb-3">
+                <button id="startBtn" class="btn btn-primary">Start Recording</button>
+                <button id="stopBtn" class="btn btn-danger" disabled>Stop</button>
+              </div>
+              <div class="mb-3">
+                <audio id="preview" controls style="width:100%; display:none;"></audio>
+              </div>
+              <div>
+                <button id="uploadBtn" class="btn btn-success" disabled>Upload</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Transcription</h5>
+              <pre id="transcription" class="small">No transcription yet.</pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">User Prompt</h5>
+              <textarea id="userPrompt" class="form-control" rows="8" placeholder="Enter a prompt..."></textarea>
+              <div class="form-text mt-2" id="promptHelp">Prompt is editable.</div>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Generated SQL</h5>
+              <pre id="generatedSql" class="small text-muted">No SQL generated yet.</pre>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Query Results</h5>
+              <div id="queryResults" class="table-responsive small">No results yet.</div>
+            </div>
+          </div>
+
+          <div class="mt-3 text-muted small">
+            <p>Saved audio files are stored in the <code>/audio</code> directory on the server.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="/static/main.js"></script>
+  </body>
+</html>
