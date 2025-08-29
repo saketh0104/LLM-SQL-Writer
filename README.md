@@ -127,7 +127,4 @@ uvicorn app:app --reload
 MIT License © 2025 Saketh Nandula
 
 ---
-
 Enjoy your voice-driven SQL application! 🚀
-
-```
