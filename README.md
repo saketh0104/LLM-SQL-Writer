@@ -124,7 +124,7 @@ uvicorn app:app --reload
 
 ## License
 
-MIT License © 2025 Saketh Bala Manikya Venkata Nandula
+MIT License © 2025 Saketh Nandula
 
 ---
 
