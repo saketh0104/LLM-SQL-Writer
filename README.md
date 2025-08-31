@@ -71,8 +71,7 @@ autoSQL/
    ```
 
 ---
-
-6. **Running the Application**
+## Running the Application
 
 Start the FastAPI server:
 
