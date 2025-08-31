@@ -17,7 +17,7 @@ Simply record your voice prompt → get it transcribed → converted into a vali
 ---
 
 ## 📂 Project Structure
-
+```
 autoSQL/
 ├── app.py                # FastAPI backend server
 ├── main.py               # LLM → SQL → DuckDB logic
@@ -33,7 +33,7 @@ autoSQL/
 ├── .env.example          # Example template for environment variables
 ├── .gitignore
 └── requirements.txt
-
+```
 ---
 
 ## ⚙️ Setup & Installation
