@@ -1,6 +1,6 @@
-# LLM SQL Writer
+# Talk2SQL — An LLM-Powered SQL Database Writer
 
-**LLM SQL Writer** is an end-to-end intelligent application that allows users to interact with a database using **natural speech**. Users can record audio prompts, which are transcribed and converted into SQL queries by a large language model. The SQL is executed on a DuckDB database, and results are displayed in a clean, responsive web interface.
+**Talk2SQL** is an end-to-end intelligent application that allows users to interact with a database using **natural speech**. Users can record audio prompts, which are transcribed and converted into SQL queries by a large language model. The SQL is executed on a DuckDB database, and results are displayed in a clean, responsive web interface.
 
 ---
 
